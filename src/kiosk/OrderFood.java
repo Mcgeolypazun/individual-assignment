@@ -6,4 +6,5 @@ public abstract class OrderFood {
 	public abstract void foodName();
 	public abstract void foodExplanation();
 	public abstract void OrderPrice();
+
 }

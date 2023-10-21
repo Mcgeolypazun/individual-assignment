@@ -4,7 +4,7 @@ public class Shakes extends Custard{
 	protected int price = 6500;
 	@Override
 	public void foodName() {
-		System.out.println("Shakes")
+		System.out.println("Shakes");
 	}
 
 	@Override

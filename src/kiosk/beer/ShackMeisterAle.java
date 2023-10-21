@@ -4,7 +4,7 @@ public class ShackMeisterAle extends Alcohol{
 	protected int price = 9800;
 	@Override
 	public void foodName() {
-		System.out.println("ShakeMeisterAle");
+		System.out.println("1. ShakeMeisterAle");
 	}
 
 	@Override

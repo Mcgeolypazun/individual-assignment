@@ -4,7 +4,7 @@ public class Wine extends Alcohol{
 	protected int price = 7800;
 	@Override
 	public void foodName() {
-		System.out.println("Wine");
+		System.out.println("2. Wine");
 	}
 
 	@Override

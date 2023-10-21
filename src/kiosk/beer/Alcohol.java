@@ -5,14 +5,14 @@ public class Alcohol extends OrderFood{
 
 	@Override
 	public void foodName() {
-		System.out.println("Beer");
+		System.out.println("Alcohol");
 		
 	}
 
 	@Override
 	public void foodExplanation() {
 		
-		System.out.println("설명 없음");
+		System.out.println("프리미엄 술 종류");
 	}
 
 	@Override
