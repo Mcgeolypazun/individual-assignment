@@ -14,7 +14,7 @@ import kiosk.printpage.MainView;
 
 public class Main {
 	public static boolean flag = true;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		Scanner kb = new Scanner(System.in);
 

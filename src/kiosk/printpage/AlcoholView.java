@@ -11,28 +11,31 @@ import java.util.Scanner;
 public class AlcoholView extends AbstractView{
 
     Scanner kb= new Scanner(System.in);
-   public AlcoholView(){
+   public AlcoholView() throws InterruptedException {
+       dishesMenu();
        setContentView(new Alcohol());
+       System.out.print("1.");
        setContentView(new ShackMeisterAle());
+       System.out.print("2.");
        setContentView(new Wine());
        int ButtonInt = kb.nextInt();
        move(ButtonInt);
    }
 
-   public void move(int ButtonInt){
+   public void move(int ButtonInt) throws InterruptedException {
        if (ButtonInt == 1){
-           Button shackMeisterAle = new Button(ButtonInt) {
+           Button shackMeisterAlebutton = new Button(ButtonInt) {
                @Override
                public void Move(int buttonInt) {
-                   PurchaseView purchaseView = new PurchaseView();
+                   PurchaseView purchaseView = new PurchaseView(new ShackMeisterAle());
                }
            };
        }
        else if(ButtonInt == 2){
-           Button wine = new Button(ButtonInt) {
+           Button wineButton = new Button(ButtonInt) {
                @Override
                public void Move(int buttonInt) {
-                    PurchaseView purchaseView = new PurchaseView();
+                    PurchaseView purchaseView = new PurchaseView(new Wine());
                }
            };
        }

@@ -4,17 +4,20 @@ public class Shakes extends Custard{
 	protected int price = 6500;
 	@Override
 	public void foodName() {
-		System.out.println("Shakes");
+		System.out.print(" Shakes| ");
 	}
 
 	@Override
 	public void foodExplanation() {
-		System.out.println("바닐라, 초콜렛, 솔티드 캬라멜, 블랙 & 화이트, 스트로 베리, 피넛버터, 커피");
+		System.out.println("| 바닐라, 초콜렛, 솔티드 캬라멜, 블랙 & 화이트, 스트로 베리, 피넛버터, 커피");
 	}
 
 	@Override
 	public void OrderPrice() {
-		System.out.println("W "+price);
+		System.out.print("W "+price);
 	}
-	
+
+	public int getPrice(){
+		return price;
+	}
 }
