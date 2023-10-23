@@ -3,16 +3,16 @@ package kiosk.printpage;
 import kiosk.OrderFood;
 import java.util.*;
 
-import static kiosk.printpage.SystemView.sum;
+import static kiosk.printpage.SystemView.*;
 
 public class BasketView extends AbstractView{
    static ArrayList<OrderFood> basket = new ArrayList<>();
    static HashMap<String,Integer> mapBasket = new HashMap();
    static int humanCount = 0;
    static Scanner kb = new Scanner(System.in);
+   static int sum = 0;
 
    static public void checkView() throws InterruptedException {
-       int sum = 0;
        int number = 1;
        System.out.println("|Orders|");
 
@@ -54,7 +54,6 @@ public class BasketView extends AbstractView{
         }
 
        System.out.println("총액은 "+sum+"W 입니다.");
-       SystemView.sum += sum;
        System.out.println();
        System.out.println("1.주문    2.메뉴판");
        orderOrMenu(kb.nextInt());
@@ -64,11 +63,15 @@ public class BasketView extends AbstractView{
    public static void orderOrMenu(int intButton) throws InterruptedException {
        if(intButton == 1){
            humanCount++;
+           SystemView.sum += sum;
+           sum = 0;
+           allDishesArr.addAll(basket);
            System.out.println("주문이 완료 되었습니다.");
            System.out.println();
            System.out.println("대기번호는 ["+humanCount+"] 번 입니다.");
            System.out.println("(3초후 메뉴판으로 돌아갑니다.)");
            basket.clear();
+           mapBasket.clear();
            Thread.sleep(3000);
 
        }
