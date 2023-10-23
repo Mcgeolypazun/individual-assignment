@@ -17,9 +17,11 @@ public class BasketView extends AbstractView{
        System.out.println("|Orders|");
 
        for(int i=0;i<basket.size();i++){
+           int dishesCount = 1;
            for(int j=i-1;j>=0;j--){
                if (basket.get(i).getName().equals(basket.get(j).getName())){
-                   basket.get(i).setDishesCount();//숫자 증가, 디쉬 갯수 세기
+                   dishesCount++;
+                   basket.get(i).setDishesCount(dishesCount);//숫자 증가, 디쉬 갯수 세기
                    mapBasket.put(basket.get(i).getName(),basket.get(i).getDishesCount());
                }
            }
@@ -39,6 +41,7 @@ public class BasketView extends AbstractView{
 
                     System.out.println();
                     sum += basket.get(i).getPrice();
+                    basket.get(i).setPrice(1);
 
                 continue;
             }
@@ -51,6 +54,7 @@ public class BasketView extends AbstractView{
 
                 System.out.println();
                 sum += basket.get(i).getPrice()*mapBasket.get(basket.get(i).getName());
+
                 mapBasket.put(basket.get(i).getName(),0);
             }
             else if(mapBasket.get(basket.get(i).getName()) == 1){
@@ -71,6 +75,7 @@ public class BasketView extends AbstractView{
        System.out.println();
        System.out.println("1.주문    2.메뉴판");
        orderOrMenu(kb.nextInt());
+       sum = 0;
 
    }
 

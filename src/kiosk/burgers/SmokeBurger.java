@@ -29,9 +29,10 @@ public class SmokeBurger extends Burger {
 		return this.dishesCount;
 	}
 
-	public void setDishesCount() {
+	public void setDishesCount(int dishesCount) {
 		this.dishesCount++;
 	}
+	public void setDishesCountinit(){ this.dishesCount = dishesCount;}
 
 	public String getName(){ return nameOfFood;}
 }

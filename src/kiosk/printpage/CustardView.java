@@ -5,6 +5,7 @@ import kiosk.burgers.Burger;
 import kiosk.burgers.ShakeBurger;
 import kiosk.burgers.SmokeBurger;
 import kiosk.custard.Custard;
+import kiosk.custard.RedBeanShake;
 import kiosk.custard.ShakeOfWeek;
 import kiosk.custard.Shakes;
 
@@ -19,6 +20,8 @@ public class CustardView extends AbstractView{
         setContentView(new ShakeOfWeek());
         System.out.print("2.");
         setContentView(new Shakes());
+        System.out.print("3.");
+        setContentView(new RedBeanShake());
         int ButtonInt = kb.nextInt();
         move(ButtonInt);
     }
@@ -37,6 +40,14 @@ public class CustardView extends AbstractView{
                 @Override
                 public void Move(int buttonInt) {
                     PurchaseView purchaseView = new PurchaseView(new Shakes());
+                }
+            };
+        }
+        else if(ButtonInt == 3){
+            Button button2 = new Button(ButtonInt) {
+                @Override
+                public void Move(int buttonInt) {
+                    PurchaseView purchaseView = new PurchaseView(new RedBeanShake());
                 }
             };
         }

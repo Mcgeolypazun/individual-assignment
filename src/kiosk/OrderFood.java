@@ -1,6 +1,6 @@
 package kiosk;
 
-public abstract class OrderFood {
+public abstract class OrderFood {//클래스를 추가할때 explanation, name, price를 바꾼다
 	private int price;
 	private String nameOfFood ="good";
 	private int dishesCount = 1;
@@ -18,7 +18,7 @@ public abstract class OrderFood {
 		return dishesCount;
 	}
 
-	public void setDishesCount() {
+	public void setDishesCount(int dishesCount) {
 		this.dishesCount++;
 	}
 
@@ -26,5 +26,9 @@ public abstract class OrderFood {
 
 	public  void setPrice(int option) {
 		this.price += option;
+	}
+
+	public void setDishesCountinit() {
+		dishesCount = 0;
 	}
 }

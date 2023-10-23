@@ -31,9 +31,9 @@ public class DoubleSmokeBurger extends OrderFood {
         return this.dishesCount;
     }
 
-    public void setDishesCount() {
-        this.dishesCount++;
+    public void setDishesCount(int dishesCount) {
+        this.dishesCount = dishesCount;
     }
-
+    public void setDishesCountinit(){ this.dishesCount = 0;}
     public String getName(){ return nameOfFood;}
 }

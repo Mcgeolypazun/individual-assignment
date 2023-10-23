@@ -1,7 +1,7 @@
 package kiosk.Drink;
 import kiosk.*;
 
-public class Drinks extends OrderFood{
+public class Drinks extends OrderFood{//클래스를 추가할때 explanation, name, price를 바꾼다
 	OrderFood orderfood;
 	@Override
 	public void foodName() {

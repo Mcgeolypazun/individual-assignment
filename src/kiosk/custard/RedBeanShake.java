@@ -1,19 +1,17 @@
-package kiosk.burgers;
+package kiosk.custard;
 
-import kiosk.OrderFood;
-
-public class DoubleShakeBurger extends OrderFood {
-    protected int price = 9900;
+public class RedBeanShake extends Custard{
+    protected int price = 6100;
     private int dishesCount = 1;
-    private String nameOfFood = "DoubleShakeBurger";
+    private String nameOfFood = "RedBeanShake";
     @Override
     public void foodName() {
-        System.out.print(" DoubleShankBurger ");
+        System.out.print(" Red Bean Shake ");
     }
 
     @Override
     public void foodExplanation() {
-        System.out.println("| 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
+        System.out.println("| 신선한 커스터드와 함께 우유와 레드빈이 블렌딩 된 시즈널 쉐이크");
     }
 
     @Override
@@ -25,7 +23,6 @@ public class DoubleShakeBurger extends OrderFood {
         return price;
     }
 
-
     public int getDishesCount() {
         return this.dishesCount;
     }
@@ -34,5 +31,6 @@ public class DoubleShakeBurger extends OrderFood {
         this.dishesCount = dishesCount;
     }
     public void setDishesCountinit(){ this.dishesCount = 0;}
+
     public String getName(){ return nameOfFood;}
 }

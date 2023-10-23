@@ -7,6 +7,7 @@ import kiosk.beer.ShackMeisterAle;
 import kiosk.beer.Wine;
 import kiosk.burgers.*;
 import kiosk.custard.Custard;
+import kiosk.custard.RedBeanShake;
 import kiosk.custard.ShakeOfWeek;
 import kiosk.custard.Shakes;
 
@@ -34,6 +35,7 @@ public class ClassData {//SystemView에서 가격표시를 위해 이쪽 data()�
         FountainSoda fountainSoda = new FountainSoda();
         ShroomBurger shroomBurger = new ShroomBurger();
         DoubleShroomBurger doubleShroomBurger = new DoubleShroomBurger();
+        RedBeanShake redBeanShake = new RedBeanShake();
         mapStringClass.put(shackMeisterAle.getName(), shackMeisterAle.getPrice());
         mapStringClass.put(wine.getName(), wine.getPrice());
         mapStringClass.put(doubleShakeBurger.getName(), doubleShakeBurger.getPrice());
@@ -46,6 +48,7 @@ public class ClassData {//SystemView에서 가격표시를 위해 이쪽 data()�
         mapStringClass.put(smokeBurger.getName(), smokeBurger.getPrice());
         mapStringClass.put(shroomBurger.getName(), shroomBurger.getPrice());
         mapStringClass.put(doubleShroomBurger.getName(), doubleShroomBurger.getPrice());
+        mapStringClass.put(redBeanShake.getName(), redBeanShake.getPrice());
 
     }
 
