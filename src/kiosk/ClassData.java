@@ -5,17 +5,14 @@ import kiosk.Drink.FiftyFifty;
 import kiosk.Drink.FountainSoda;
 import kiosk.beer.ShackMeisterAle;
 import kiosk.beer.Wine;
-import kiosk.burgers.DoubleShakeBurger;
-import kiosk.burgers.DoubleSmokeBurger;
-import kiosk.burgers.ShakeBurger;
-import kiosk.burgers.SmokeBurger;
+import kiosk.burgers.*;
 import kiosk.custard.Custard;
 import kiosk.custard.ShakeOfWeek;
 import kiosk.custard.Shakes;
 
 import java.util.*;
 
-public class ClassData {
+public class ClassData {//SystemView에서 가격표시를 위해 이쪽 data()에 클래스를 새로 생성할때 그 객체도 생성함
 
     public static HashMap<String,Integer> mapStringClass = new HashMap<>();
 
@@ -35,6 +32,8 @@ public class ClassData {
         Shakes shakes = new Shakes();
         FiftyFifty fiftyFifty = new FiftyFifty();
         FountainSoda fountainSoda = new FountainSoda();
+        ShroomBurger shroomBurger = new ShroomBurger();
+        DoubleShroomBurger doubleShroomBurger = new DoubleShroomBurger();
         mapStringClass.put(shackMeisterAle.getName(), shackMeisterAle.getPrice());
         mapStringClass.put(wine.getName(), wine.getPrice());
         mapStringClass.put(doubleShakeBurger.getName(), doubleShakeBurger.getPrice());
@@ -45,8 +44,8 @@ public class ClassData {
         mapStringClass.put(fountainSoda.getName(),fountainSoda.getPrice());
         mapStringClass.put(shakeBurger.getName(),shakeBurger.getPrice());
         mapStringClass.put(smokeBurger.getName(), smokeBurger.getPrice());
-
-
+        mapStringClass.put(shroomBurger.getName(), shroomBurger.getPrice());
+        mapStringClass.put(doubleShroomBurger.getName(), doubleShroomBurger.getPrice());
 
     }
 

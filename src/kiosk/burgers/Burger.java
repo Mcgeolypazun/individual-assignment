@@ -2,7 +2,7 @@ package kiosk.burgers;
 
 import kiosk.OrderFood;
 
-public class Burger extends OrderFood {
+public class Burger extends OrderFood {//클래스를 추가할때 explanation, name, price를 바꾼다
 	OrderFood orderFood;
 	private int doubleOption = 3000;
 	@Override

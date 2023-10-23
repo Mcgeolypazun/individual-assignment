@@ -129,7 +129,7 @@ public class MainView extends AbstractView{
         System.out.print("5. 장바구니");
         System.out.println();
 
-        System.out.print("6. 취소");
+        System.out.print("6. 프로그램 종료");
         System.out.println();
 
     }
