@@ -11,7 +11,7 @@ public class ShakeOfWeek extends Custard{
 
 	@Override
 	public void foodExplanation() {
-		System.out.println(" 특별한 커스타드 플레이버");
+		System.out.println("| 특별한 커스타드 플레이버");
 	}
 
 	@Override

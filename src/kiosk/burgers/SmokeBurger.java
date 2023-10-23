@@ -12,7 +12,7 @@ public class SmokeBurger extends Burger {
 
 	@Override
 	public void foodExplanation() {
-		System.out.println(" 애플 우드 칩으로 훈연한 짭짤한 베이컨, 매콤한 체리 페퍼에 쉡소스가 토핑된 치즈 버거");
+		System.out.println("| 애플 우드 칩으로 훈연한 짭짤한 베이컨, 매콤한 체리 페퍼에 쉡소스가 토핑된 치즈 버거");
 	}
 
 	@Override

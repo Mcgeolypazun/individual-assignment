@@ -11,7 +11,7 @@ public class FountainSoda extends Drinks{
 
 	@Override
 	public void foodExplanation() {
-		System.out.println(" 코카콜라, 코카콜라 제로, 스프라이트, 환타 오렌지, 환타 그레이프");
+		System.out.println("| 코카콜라, 코카콜라 제로, 스프라이트, 환타 오렌지, 환타 그레이프");
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import kiosk.custard.*;
 import kiosk.printpage.AbstractView;
 import kiosk.printpage.MainView;
 
-public class Main {
+public class Main {//0번 숨겨진 기능 추가
 	public static boolean flag = true;
 	public static void main(String[] args) throws InterruptedException {
 

@@ -23,6 +23,15 @@ public class MainView extends AbstractView{
 
     public void move(int buttonInt) throws InterruptedException {//다른 View로 이동하는 메소드
         switch (buttonInt) {
+            case 0:
+                Button system = new Button(buttonInt) {
+                    @Override
+                    public void Move(int buttonInt) throws InterruptedException {
+                        SystemView systemView = new SystemView();
+                    }
+                };
+                break;
+
             case 1:Button burger = new Button(buttonInt) {
                 @Override
                 public void Move(int buttonInt) throws InterruptedException {

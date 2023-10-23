@@ -3,6 +3,8 @@ package kiosk.printpage;
 import kiosk.OrderFood;
 import java.util.*;
 
+import static kiosk.printpage.SystemView.sum;
+
 public class BasketView extends AbstractView{
    static ArrayList<OrderFood> basket = new ArrayList<>();
    static HashMap<String,Integer> mapBasket = new HashMap();
@@ -52,6 +54,7 @@ public class BasketView extends AbstractView{
         }
 
        System.out.println("총액은 "+sum+"W 입니다.");
+       SystemView.sum += sum;
        System.out.println();
        System.out.println("1.주문    2.메뉴판");
        orderOrMenu(kb.nextInt());

@@ -6,7 +6,7 @@ public class Wine extends Alcohol{
 	private String nameOfFood = "Wine";
 	@Override
 	public void foodName() {
-		System.out.print(" Wine| ");
+		System.out.print(" Wine ");
 	}
 
 	@Override
@@ -16,7 +16,7 @@ public class Wine extends Alcohol{
 
 	@Override
 	public void OrderPrice() {
-		System.out.print("W "+price);
+		System.out.print("| W "+price+" |");
 	}
 
 	public int getPrice(){

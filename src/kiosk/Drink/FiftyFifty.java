@@ -11,7 +11,7 @@ public class FiftyFifty extends Drinks{
 
 	@Override
 	public void foodExplanation() {
-		System.out.println(" 레몬에이드와 아이스티의 만남");
+		System.out.println("| 레몬에이드와 아이스티의 만남");
 	}
 
 	@Override

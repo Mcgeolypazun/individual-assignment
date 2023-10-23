@@ -12,7 +12,7 @@ public class ShakeBurger extends Burger{
 
 	@Override
 	public void foodExplanation() {
-		System.out.println(" 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
+		System.out.println("| 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
 	}
 
 	@Override
