@@ -23,6 +23,9 @@ public class BasketView extends AbstractView{
                    mapBasket.put(basket.get(i).getName(),basket.get(i).getDishesCount());
                }
            }
+            if(i == 0){
+                mapBasket.put(basket.get(i).getName(),basket.get(i).getDishesCount());
+            }
 
        }
         for(int i=0;i<basket.size();i++){//화면 출력
@@ -40,6 +43,17 @@ public class BasketView extends AbstractView{
                 continue;
             }
             if(mapBasket.get(basket.get(i).getName())>=2) {
+                System.out.print((number++)+ ".");
+                basket.get(i).foodName();
+                basket.get(i).OrderPrice();
+                System.out.print("| " + mapBasket.get(basket.get(i).getName()) + "개");
+                basket.get(i).foodExplanation();
+
+                System.out.println();
+                sum += basket.get(i).getPrice()*mapBasket.get(basket.get(i).getName());
+                mapBasket.put(basket.get(i).getName(),0);
+            }
+            else if(mapBasket.get(basket.get(i).getName()) == 1){
                 System.out.print((number++)+ ".");
                 basket.get(i).foodName();
                 basket.get(i).OrderPrice();

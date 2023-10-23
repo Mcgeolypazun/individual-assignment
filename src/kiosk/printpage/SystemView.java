@@ -1,9 +1,11 @@
 package kiosk.printpage;
+import kiosk.ClassData;
 import kiosk.OrderFood;
 
 import java.util.*;
 import java.util.Scanner;
 
+import static kiosk.ClassData.mapStringClass;
 import static kiosk.printpage.BasketView.mapBasket;
 
 public class SystemView {
@@ -32,10 +34,14 @@ public class SystemView {
                        allDishesMap.put(allDishesArr.get(i).getName(),valueCount);
                    }
                }
+                if(i == 0){
+                    allDishesMap.put(allDishesArr.get(i).getName(),valueCount);
+                }
             }
 
             for (Map.Entry<String,Integer> entry : allDishesMap.entrySet()){
-                System.out.println(entry.getKey()+" \t | \t"+entry.getValue());
+                System.out.print(entry.getKey()+" \t | \t"+entry.getValue());
+                System.out.println(" |"+ClassData.mapStringClass.get(entry.getValue()));
             }
             System.out.println();
             System.out.println("1. 돌아가기");

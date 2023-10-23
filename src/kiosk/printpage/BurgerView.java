@@ -37,7 +37,7 @@ public class BurgerView extends AbstractView{
                 @Override
                 public void Move(int buttonInt) {
 
-                    PurchaseView purchaseView = new PurchaseView(new ShakeBurger(),ButtonOption);
+                    PurchaseView purchaseView = new PurchaseView(new ShakeBurger());
                 }
             };
         }
@@ -45,7 +45,7 @@ public class BurgerView extends AbstractView{
             Button SmokeBurger = new Button(ButtonInt) {
                 @Override
                 public void Move(int buttonInt) {
-                    PurchaseView purchaseView = new PurchaseView(new SmokeBurger(),ButtonOption);
+                    PurchaseView purchaseView = new PurchaseView(new SmokeBurger());
                 }
             };
         }
@@ -53,7 +53,7 @@ public class BurgerView extends AbstractView{
             Button SmokeBurger = new Button(ButtonInt) {
                 @Override
                 public void Move(int buttonInt) {
-                    PurchaseView purchaseView = new PurchaseView(new DoubleShakeBurger(),ButtonOption);
+                    PurchaseView purchaseView = new PurchaseView(new DoubleShakeBurger());
                 }
             };
         }
@@ -61,7 +61,7 @@ public class BurgerView extends AbstractView{
             Button SmokeBurger = new Button(ButtonInt) {
                 @Override
                 public void Move(int buttonInt) {
-                    PurchaseView purchaseView = new PurchaseView(new DoubleSmokeBurger(),ButtonOption);
+                    PurchaseView purchaseView = new PurchaseView(new DoubleSmokeBurger());
                 }
             };
         }
