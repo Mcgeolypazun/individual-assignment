@@ -7,6 +7,7 @@ import kiosk.OrderFood;
 import kiosk.beer.Alcohol;
 import kiosk.burgers.Burger;
 import kiosk.custard.Custard;
+import static kiosk.Main.kb;
 
 import static kiosk.printpage.BasketView.checkView;
 

@@ -2,11 +2,11 @@ package kiosk.printpage;
 
 import kiosk.OrderFood;
 
-import java.util.Scanner;
+
+import static kiosk.Main.kb;
 
 public class PurchaseView extends AbstractView{
     BasketView basketView;
-    Scanner kb = new Scanner(System.in);
     public PurchaseView(OrderFood orderFood){
         setContentView(orderFood);
         System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");

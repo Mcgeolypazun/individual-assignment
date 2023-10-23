@@ -14,9 +14,10 @@ import kiosk.printpage.MainView;
 
 public class Main {//0번 숨겨진 기능 추가
 	public static boolean flag = true;
+	public static Scanner kb = new Scanner(System.in);
 	public static void main(String[] args) throws InterruptedException {
 
-		Scanner kb = new Scanner(System.in);
+
 
 
 

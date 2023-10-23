@@ -4,12 +4,11 @@ import kiosk.OrderFood;
 import java.util.*;
 
 import static kiosk.printpage.SystemView.*;
-
+import static kiosk.Main.kb;
 public class BasketView extends AbstractView{
    static ArrayList<OrderFood> basket = new ArrayList<>();
    static HashMap<String,Integer> mapBasket = new HashMap();
    static int humanCount = 0;
-   static Scanner kb = new Scanner(System.in);
    static int sum = 0;
 
    static public void checkView() throws InterruptedException {

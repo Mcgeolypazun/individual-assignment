@@ -5,11 +5,11 @@ import kiosk.beer.Alcohol;
 import kiosk.beer.ShackMeisterAle;
 import kiosk.beer.Wine;
 import kiosk.burgers.*;
+import static kiosk.Main.kb;
 
-import java.util.Scanner;
 
 public class BurgerView extends AbstractView{
-    Scanner kb= new Scanner(System.in);
+
     ShakeBurger shakeBurger = new ShakeBurger();
     SmokeBurger smokeBurger = new SmokeBurger();
     ShroomBurger shroomBurger = new ShroomBurger();// 객체 추가할때 1

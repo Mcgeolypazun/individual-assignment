@@ -8,9 +8,11 @@ import kiosk.beer.Wine;
 
 import java.util.Scanner;
 
+import static kiosk.Main.kb;
+
 public class AlcoholView extends AbstractView{
 
-    Scanner kb= new Scanner(System.in);
+
    public AlcoholView() throws InterruptedException {
        dishesMenu();
        setContentView(new Alcohol());

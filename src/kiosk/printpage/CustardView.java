@@ -8,11 +8,11 @@ import kiosk.custard.Custard;
 import kiosk.custard.RedBeanShake;
 import kiosk.custard.ShakeOfWeek;
 import kiosk.custard.Shakes;
+import static kiosk.Main.kb;
 
-import java.util.Scanner;
 
 public class CustardView extends AbstractView{
-    Scanner kb= new Scanner(System.in);
+
     public CustardView() throws InterruptedException {
         dishesMenu();
         setContentView(new Custard());

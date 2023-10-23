@@ -7,10 +7,9 @@ import java.util.Scanner;
 
 import static kiosk.ClassData.mapStringClass;
 import static kiosk.printpage.BasketView.mapBasket;
-
+import static kiosk.Main.kb;
 public class SystemView {
     static int sum = 0;
-    Scanner kb = new Scanner(System.in);
     static ArrayList<OrderFood> allDishesArr = new ArrayList<>();
     static HashMap<String,Integer> allDishesMap = new HashMap<>();
     SystemView(){

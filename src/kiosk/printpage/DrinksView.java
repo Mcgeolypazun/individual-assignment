@@ -7,11 +7,12 @@ import kiosk.Drink.FountainSoda;
 import kiosk.custard.Custard;
 import kiosk.custard.ShakeOfWeek;
 import kiosk.custard.Shakes;
+import static kiosk.Main.kb;
 
 import java.util.Scanner;
 
 public class DrinksView extends AbstractView{
-    Scanner kb= new Scanner(System.in);
+
     public DrinksView() throws InterruptedException {
         dishesMenu();
         setContentView(new Drinks());
