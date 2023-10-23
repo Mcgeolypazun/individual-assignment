@@ -4,7 +4,7 @@ import kiosk.OrderFood;
 
 public class Burger extends OrderFood {
 	OrderFood orderFood;
-
+	private int doubleOption = 3000;
 	@Override
 	public void foodName() {
 		System.out.println("Burgers");
@@ -22,6 +22,9 @@ public class Burger extends OrderFood {
 		// TODO Auto-generated method stub
 		
 	}
-	
+
+	public int getOptionSum() {
+		return doubleOption;
+	}
 	
 }

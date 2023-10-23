@@ -16,6 +16,15 @@ public class PurchaseView extends AbstractView{
 
     }
 
+    public PurchaseView(OrderFood orderFood,int option){
+
+        setContentView(orderFood);
+        System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
+        System.out.println("1. 확인        2. 취소");
+        int intButton = kb.nextInt();
+        move(intButton,orderFood);
+    }
+
     public void move(int intButton,OrderFood orderFood){
         if (intButton == 1){
             orderFood.foodName();

@@ -2,6 +2,8 @@ package kiosk.beer;
 
 public class Wine extends Alcohol{
 	private int price = 7800;
+	private int dishesCount = 1;
+	private String nameOfFood = "Wine";
 	@Override
 	public void foodName() {
 		System.out.print(" Wine| ");
@@ -20,4 +22,15 @@ public class Wine extends Alcohol{
 	public int getPrice(){
 		return price;
 	}
+
+	public int getDishesCount() {
+		return this.dishesCount;
+	}
+
+	public void setDishesCount() {
+		this.dishesCount++;
+	}
+
+	public String getName(){ return nameOfFood;}
+
 }
