@@ -17,8 +17,11 @@ import java.util.*;
 
 public class ClassData {
 
-    public static HashMap<String,OrderFood> mapStringClass = new HashMap<>();
+    public static HashMap<String,Integer> mapStringClass = new HashMap<>();
 
+    public ClassData(){
+        data();
+    }
 
     public static void data(){
         ShackMeisterAle shackMeisterAle= new ShackMeisterAle();
@@ -32,14 +35,17 @@ public class ClassData {
         Shakes shakes = new Shakes();
         FiftyFifty fiftyFifty = new FiftyFifty();
         FountainSoda fountainSoda = new FountainSoda();
-        mapStringClass.put(shackMeisterAle.getName(), shackMeisterAle);
-        mapStringClass.put(wine.getName(), wine);
-        mapStringClass.put(doubleShakeBurger.getName(), doubleShakeBurger);
-        mapStringClass.put(doubleSmokeBurger.getName(), doubleSmokeBurger);
-        mapStringClass.put(shakeOfWeek.getName(),shakeOfWeek);
-        mapStringClass.put(shakes.getName(),shakes);
-        mapStringClass.put(fiftyFifty.getName(),fiftyFifty);
-        mapStringClass.put(fountainSoda.getName(),fountainSoda);
+        mapStringClass.put(shackMeisterAle.getName(), shackMeisterAle.getPrice());
+        mapStringClass.put(wine.getName(), wine.getPrice());
+        mapStringClass.put(doubleShakeBurger.getName(), doubleShakeBurger.getPrice());
+        mapStringClass.put(doubleSmokeBurger.getName(), doubleSmokeBurger.getPrice());
+        mapStringClass.put(shakeOfWeek.getName(),shakeOfWeek.getPrice());
+        mapStringClass.put(shakes.getName(),shakes.getPrice());
+        mapStringClass.put(fiftyFifty.getName(),fiftyFifty.getPrice());
+        mapStringClass.put(fountainSoda.getName(),fountainSoda.getPrice());
+        mapStringClass.put(shakeBurger.getName(),shakeBurger.getPrice());
+        mapStringClass.put(smokeBurger.getName(), smokeBurger.getPrice());
+
 
 
     }

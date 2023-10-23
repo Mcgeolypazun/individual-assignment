@@ -14,6 +14,7 @@ public class SystemView {
     static ArrayList<OrderFood> allDishesArr = new ArrayList<>();
     static HashMap<String,Integer> allDishesMap = new HashMap<>();
     SystemView(){
+        ClassData classData = new ClassData();
         while(true) {
             System.out.println("| 총 판매금액 현황 |");
             System.out.println("현재까지 총 판매된 금액은 [W " + sum + " ]입니다.");
@@ -41,7 +42,7 @@ public class SystemView {
 
             for (Map.Entry<String,Integer> entry : allDishesMap.entrySet()){
                 System.out.print(entry.getKey()+" \t | \t"+entry.getValue());
-                System.out.println(" |"+ClassData.mapStringClass.get(entry.getValue()));
+                System.out.println(" | "+ mapStringClass.get(entry.getKey())+"W");
             }
             System.out.println();
             System.out.println("1. 돌아가기");
